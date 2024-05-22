@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Website/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Assignment 3</title>
+</head>
+<body>
+    <header id="cs-navigation">
+        <div class="cs-container-navigation">
+            <!--Nav Logo-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="/Website/images/logo.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Menu
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+            <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+            <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+            </button> -->
+        </div>
+    </header>
+
+
+    <!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+    <div>
+        <section id="hero-1785">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">かき氷</span>
+                    <h1 class="cs-title">Welcome to Sebastian Kakigori</h1>
+                    <div class="cs-button-group">
+                        <a href="" class="cs-button-solid cs-button1">About us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Background Image -->
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" src="/Website/images/background.jpg">
+                <source media="(min-width: 601px)" src="/Website/images/background.jpg">
+                <img loading="lazy" decoding="async" src="/Website/images/background.jpg" alt="field" width="1920" height="1200" aria-hidden="true">
+            </picture>
+
+            <img class="cs-graphic" src="/Website/images/hero_background.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+            <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
+            <img class="cs-graphic cs-graphic-dark" src="/Website/images/hero_background.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+        </section>
+
+
+            <!-- ============================================ -->
+        <!--             Side By Side Reverse             -->
+        <!-- ============================================ -->
+
+        <section id="sbsr-1007">
+            <div class="cs-container">
+                <a href="/Website/images/sign.jpg" class="cs-image-group" data-fancybox="gallery">
+                    <picture class="cs-picture">
+                        <!--Desktop-->
+                        <source media="(min-width: 1024px)" src="/Website/images/sign.jpg">
+                        <!--Tablet-->
+                        <source media="(min-width: 601px)" src="/Website/images/sign.jpg">
+                        <!--Mobile-->
+                        <source media="(max-width: 600px)" src="/Website/images/sign.jpg">
+                        <img loading="lazy" decoding="async" src="/Website/images/sign.jpg" alt="beef" width="522" height="461" aria-hidden="true">
+                    </picture>
+                    <img class="cs-seal" loading="lazy" decoding="async" src="/Website/images/Subject.svg" alt="seal" width="187" height="180">
+                </a>
+                <div class="cs-content">
+                    <span class="cs-topper">Our Story</span>
+                    <h2 class="cs-title">Who We Are</h2>
+                    <p class="cs-text">
+                        Kakigōri, a Japanese shaved ice dessert, dates back to the Heian period and was first enjoyed by aristocrats. Initially mentioned in Sei Shōnagon's "The Pillow Book," it gained widespread popularity in the 19th century as ice became more accessible. The first kakigōri shop reportedly opened in Yokohama in 1869.
+                        <!--Creates the space between p tags on mobile-->
+                        <span class="cs-spacer"></span>
+                        All kakigori can be enjoyed through dine-in, takeaway or as a home pack that can be assembled and enjoyed at home. Our Kakigori are made from pasteurized dairy products and can be made vegetarian or gluten free upon request.
+                    </p>
+                    <a href="" class="cs-button-solid">Book a table</a>
+                    <div class="cs-svg">
+                        <img src="/Website/images/icons-kakigori.png" alt="svg" height="161">
+                    </div>
+                    <div class="cs-svg2">
+                        <img src="/Website/images/icons-kakigori.png" alt="svg" height="161">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+                                        
+
+
+            <!-- ============================================ -->
+        <!--                  Services                    -->
+        <!-- ============================================ -->
+
+        <section id="services-1628">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <div class="cs-svg3">
+                        <img src="/Website/images/icons-kakigori.png" alt="svg" height="161">
+                    </div>
+                    <div class="cs-svg4">
+                        <img src="/Website/images/icons-kakigori.png" alt="svg" height="161">
+                    </div>
+                    <div class="">
+                        <h2 class="cs-title">Best selling dessert</h2>
+                    </div>
+                </div>   
+            <div class="cs-container">                
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <a href="" class="cs-link">
+                            <picture class="cs-picture">
+                                <!--Mobile Image-->
+                                <source media="(max-width: 600px)" src="/Website/images/dessert-photo1.jpg">
+                                <!--Tablet and above Image-->
+                                <source media="(min-width: 601px)" src="/Website/images/dessert-photo1.jpg">
+                                <img loading="lazy" decoding="async" src="/Website/images/dessert-photo1.jpg" alt="room" width="413" height="420">
+                            </picture><h3 class = 'cs-h3'>Pistachio Berry Fusion</h3>
+                            <p class="cs-item-text">
+                                The "Pistachio Berry Fusion" combines creamy ice cream, vibrant bery coulis, and crunchy pistachios in an elegant dessert. 
+                            </p>
+                            <span class="cs-fake-link">
+                                Learn more
+                                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
+                            </span>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a href="" class="cs-link">
+                            <picture class="cs-picture">
+                                <!--Mobile Image-->
+                                <source media="(max-width: 600px)" src="/Website/images/dessert-photo2.jpg">
+                                <!--Tablet and above Image-->
+                                <source media="(min-width: 601px)" src="/Website/images/dessert-photo2.jpg">
+                                <img loading="lazy" decoding="async" src="/Website/images/dessert-photo2.jpg" alt="room" width="413" height="420">
+                            </picture>
+                            <h3 class="cs-h3">Tropical Cream Delight</h3>
+                            <p class="cs-item-text">
+                                The "Tropical Cream Delight" pairs silky soft-serve with a vibrant array of fresh tropical fruits, offering a refreshing and elegant taste of experience. 
+                            </p>
+                            <span class="cs-fake-link">
+                                Learn more
+                                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
+                            </span>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a href="" class="cs-link">
+                            <picture class="cs-picture">
+                                <!--Mobile Image-->
+                                <source media="(max-width: 600px)" src="/Website/images/dessert-photo3.jpg">
+                                <!--Tablet and above Image-->
+                                <source media="(min-width: 601px)" src="/Website/images/dessert-photo3.jpg">
+                                <img loading="lazy" decoding="async" src="/Website/images/dessert-photo3.jpg" alt="room" width="413" height="420">
+                            </picture>
+                            <h3 class="cs-h3">Festival of Fruits Fiesta</h3>
+                            <p class="cs-item-text">
+                                The "Festival of Fruits Fiesta" blends colorful shaved ice with fresh fruits and sweet syrups for a vibrant, refreshing treat. 
+                            </p>
+                            <span class="cs-fake-link">
+                                Learn more
+                                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
+                            </span>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a href="" class="cs-link">
+                            <picture class="cs-picture">
+                                <!--Mobile Image-->
+                                <source media="(max-width: 600px)" src="/Website/images/dessert-photo4.jpg">
+                                <!--Tablet and above Image-->
+                                <source media="(min-width: 601px)" src="/Website/images/dessert-photo4.jpg">
+                                <img loading="lazy" decoding="async" src="/Website/images/dessert-photo4.jpg" alt="room" width="413" height="420">
+                            </picture>
+                            <h3 class="cs-h3">Berry Bliss Mountain</h3>
+                            <p class="cs-item-text">
+                                The "Berry Bliss Mountain" is a towering delight of shaved ice layered with a spectrum of berry flavours, crowned with fresh berries for a refreshing and picturesque treat. 
+                            </p>
+                            <span class="cs-fake-link">
+                                Learn more
+                                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="cs-svg6">
+                    <img src="/Website/images/icons-kakigori.png" alt="svg" height="161">
+                </div>
+                <div class="cs-svg5">
+                    <img src="/Website/images/icons-kakigori.png" alt="svg" height="161">
+                </div>
+            </div>
+        </section>
+
+            <!-- ============================================ -->
+        <!--                   Events                     -->
+        <!-- ============================================ -->
+
+        <section id="events-1652">
+            <div class="cs-container">
+                <div class="cs-image">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.979258980776!2d144.95504878716662!3d-37.81395479971653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d553b53b769%3A0x31696bfee8ca22!2sSebastian%20Kakigori!5e0!3m2!1sen!2sau!4v1715152015107!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="cs-events">
+                    <div class="cs-svg7">
+                        <img src="/Website/images/icons-kakigori.png" alt="svg" height="161">
+                    </div>
+                    <div class="cs-content">
+                        <h2 class="cs-title">Locations & Opening Hours</h2>
+                    </div>
+                    <ul class="cs-card-group">
+                        <li class="cs-item">
+                            <div class="cs-info-wrapper">
+                                <div class="cs-info" id="location-id">
+                                    <h3 class="cs-h3">Locations</h3>
+                                    <span class="cs-location">203 Queen St, Melbourne VIC 3000</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <div class="cs-info-wrapper">
+                                <div class="cs-info" id="opening-id">
+                                    <h3 class="cs-h3">Opening Hours</h3>
+                                    <span class="cs-location">Weekdays:</span>
+                                    <span class="cs-time">
+                                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-clock.svg" alt="icon" width="24" height="24" loading="lazy" decoding="async" aria-hidden="true">
+                                        12:00PM - 10:30PM 
+                                    </span>
+                                    <span class="cs-location">Friday, Saturday:</span>
+                                    <span class="cs-time">
+                                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-clock.svg" alt="icon" width="24" height="24" loading="lazy" decoding="async" aria-hidden="true">
+                                        12:00PM - 11:00PM 
+                                    </span>
+                                    <span class="cs-location">Sunday:</span>
+                                    <span class="cs-time">
+                                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-clock.svg" alt="icon" width="24" height="24" loading="lazy" decoding="async" aria-hidden="true">
+                                        12:00PM - 10:30PM 
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </section>
+    </div>
+                                    
+
+        <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-274">
+        <div class="cs-container">
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <a aria-label="go back to home" class="cs-logo" href="">
+                    <!-- Remove the light class if you don't need the dark logo -->
+                    <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/Website/images/logo.png" alt="logo" width="240" height="32">
+                </a>
+                <div class="cs-social">
+                    <a class="cs-social-link" aria-label="visit google profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                    </a>
+                </div>
+            </div>
+            <!-- Links -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Contact</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="mailto:info@codestitch.com">hello@sebastiankakigori.com.au
+                    </a>
+                </li>
+            </ul>
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Address</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">203 Queen St<br>Melbourne VIC 3000</a>
+                </li>
+            </ul>
+            <!-- Contact Info -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Opening Hours</span>
+                </li>
+                <li class="cs-nav-li">
+                    Weekdays, Sunday: 12pm-10:30pm
+                </li>
+                <li class="cs-nav-li">
+                    Friday, Saturday: 12pm-11pm
+                </li>
+            </ul>
+        </div>
+    </footer>
+                                
+                                    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="/Website/js/script.js"></script>
+</body>
+</html>
